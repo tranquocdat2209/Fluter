@@ -43,8 +43,10 @@ class IconList {
 }
 
 final List<IconList> listImage = IconList.icons;
+
 Widget buildIconsList() => GridView(
   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4, mainAxisSpacing: 20),
+  shrinkWrap: true,
   children: List.generate(
     listImage.length,
         (index) => Container(
